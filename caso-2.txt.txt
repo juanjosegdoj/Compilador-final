@@ -1,0 +1,5 @@
+>'esto es un mensaje de bienvenida: '
+
+operacion = 23 *23/6345*(3+3)/56
+
+>'\'mensaje de salida\''#' resto mensaje : '#suma

@@ -1,0 +1,15 @@
+>'esto es un mensaje de bienvenida: '
+< digaloUno
+>'esto es un mensaje de bienvenida: '
+< digaloDos 
+>'esto es un mensaje de bienvenida: ' # no # jodas # '#' # feo
+< digaloTres
+>'esto es un mensaje de bienvenida: '
+< digaloCuatro
+>'esto es un mensaje de bienvenida: '
+
+operacion = 23 *23/6345*(3+3)/56
+
+>'\'mensaje de salida\''#' resto mensaje : '#suma
+> ''
+< dimelomami

@@ -1,0 +1,7 @@
+> "Ingresa tu edad"
+< edad
+
+edad_futura = edad + 4
+
+> "En 4 años vas a tener" edadFutura
+> "Chaolis!"

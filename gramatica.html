@@ -1,0 +1,17 @@
+<programa> := <inicioPrograma><cuerpoPrograma><finPrograma>
+
+<inicioProgram> := LECTURA IDENTIFICADOR <restoInicio> | ESCRITURA <cuerpoEscritura><restoFinPrograma><restoInicio>
+<restoInicio> := <inicioPrograma> | epsilon
+
+<finPrograma> := ESCRITURA <cuerpoEscritura> <restoFinPrograma> <finPrograma>
+<restoFinPrograma> := # <cuerpoEscritura> <restoFinPrograma> | epsilon
+
+<cuerpoEscritura> := CADENA <restoEscritura> | ENTERO <restoEscritura> | DECIMAL <restoEscritura> | IDENTIFICADOR <restoEscritura>
+<restoEscritura> := # <cuerpoEscritura> | epsilon
+
+<cuerpoPrograma> := IDENTIFICADOR = <operacion>
+<operacion> :=  <multiplicacionDivision><RestoMultiplicacionDivision>
+<restoMultiplicacionDivision> := +<operacion> | -<operacion> | epsilon
+<multiplicacionDivision> := <openrando><restoOperando>
+<operando> := IDENTIFICADOR | ENTERO | DECIMAL | (<operacion>)
+<restoOperando> := * <multiplicacionDivision> | / <multiplicacionDivision> | % <multiplicacionDivision> | epsilon
